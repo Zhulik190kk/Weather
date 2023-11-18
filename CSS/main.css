@@ -1,0 +1,160 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+html,
+body {
+	min-height: 80vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 50px;
+
+	font-family: 'Rubik', sans-serif;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 2481px;
+	height: 477px;
+	flex-shrink: 0;
+	padding: 40px 15px 50px;
+	background: linear-gradient(92deg, #00C9FF 0%, #92FE9D 100%), #292B30;
+	
+}
+
+.title {
+	text-align: center;
+	color: #FFF;
+font-family: Playfair Display;
+font-size: 100px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	width: 1298px;
+	height: 138px;
+	background: #ffffff;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.input {
+	flex-grow: 1;
+	padding: 15px;
+
+	font-weight: 450;
+	font-size: 75px;
+	line-height: 1;
+	color: #000000;
+	text-align: center;
+}
+
+.btn {
+	width: 500px;
+	height: 140px;
+	background: #4dffa9;
+	border-radius: 50px;
+
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 1;
+	color: #fff;
+
+	transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+	background: #5f98f3;
+}
+
+/* Card */
+
+.card {
+    width: 650px;
+    height: 300px;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; /* Центрирование дочерних элементов по горизонтали */
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 5px 50px 0px #258EA4;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+    width: calc(100% - 20px);
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+    border-radius: 6px;
+}
+
+.card-city {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 20px;
+    color: #000000;
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+.card-city span {
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 3px 5px;
+    background: #e5464f;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1;
+	
+}
+
+.card-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-value {
+    font-size: 100px;
+    line-height: 1;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.card-value sup {
+    font-size: 50%;
+}
+
+.card-img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.card-description {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
